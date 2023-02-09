@@ -108,6 +108,6 @@ const movies = [
 //   return `${movie.title} $({movie.year}) is rated ${movie.score}`;
 // });
 
-movies.map((title, score, year) => {
+movies.map(({ title, score, year }) => {
   return `${title} $({year}) is rated ${score}`;
 });
